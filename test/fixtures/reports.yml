@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  template: MyText
+  sensor_type: MyString
+  sensor_name: MyString
+  sensor_id: 1
+
+two:
+  title: MyString
+  description: MyText
+  template: MyText
+  sensor_type: MyString
+  sensor_name: MyString
+  sensor_id: 1
