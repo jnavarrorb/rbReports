@@ -1,17 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-  description: MyText
+traffic:
+  title: Informe de Tráfico
+  description: Muestra los outliers para detectar las anomalías de tráfico
   template: MyText
-  sensor_type: MyString
-  sensor_name: MyString
+  sensor_type: ISR
+  sensor_name: MiSensorISR
   sensor_id: 1
 
-two:
-  title: MyString
-  description: MyText
+intrusion:
+  title: Informe de Intrusiones
+  description: Muestra la tabla con las intrusiones con mayor número de eventos
   template: MyText
-  sensor_type: MyString
-  sensor_name: MyString
-  sensor_id: 1
+  sensor_type: Flow
+  sensor_name: MiSensorFlow
+  sensor_id: 2

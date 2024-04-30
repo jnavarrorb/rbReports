@@ -10,18 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20240429220215) do
+ActiveRecord::Schema.define(version: 20240430122130) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "reports", force: :cascade do |t|
-    t.string   "title"
-    t.text     "description"
-    t.text     "template"
-    t.string   "sensor_type"
-    t.string   "sensor_name"
-    t.integer  "sensor_id"
+    t.string   "title",       null: false
+    t.text     "description", null: false
+    t.text     "template",    null: false
+    t.string   "sensor_type", null: false
+    t.string   "sensor_name", null: false
+    t.integer  "sensor_id",   null: false
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

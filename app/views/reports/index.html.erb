@@ -1,7 +1,7 @@
 <h1>Reports</h1>
 
 <% @reports.each do |report| %>
-
+    <%= link_to report_path(report), class: 'report' do%>
     <h2><%=report.title%></h2>
 
     <p><%=report.description%></p>
@@ -9,10 +9,7 @@
     <div id="sensorData">
      <p><small> <%=report.sensor_id%> <%=report.sensor_name%> de tipo:"<%= report.sensor_type%> " </small></p> 
     </div>
-
-    <div id="wysiwyg">
-     <p><%=report.template%></p>
-    </div>
+  <% end %>
 <% end %>
 
 
