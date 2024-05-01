@@ -1,9 +1,12 @@
 <h1 class='title'><%= @report.title %></h1>
 <p class='description'><%= @report.description %></p>
  <div class='template' id="wysiwyg">
-     <p><%= @report.template%></p>
-     <div id="sensorData">
-     <p><small> <%= @report.sensor_id%> <%= @report.sensor_name%> de tipo:"<%= @report.sensor_type%> " </small></p> 
-    </div>
+     <p><%= @report.template%></p> 
  </div>
+ <div id="sensorData">
+     <p><small> <%= @report.sensor_id%> <%= @report.sensor_name%> de tipo:"<%= @report.sensor_type%> " </small></p> 
+</div>
+
+<%= link_to 'Editar Informe', edit_report_path(@report) %>
+<%= link_to 'Eliminar', report_path(@report), method: :delete %>
 

@@ -24,7 +24,7 @@ class ReportsControllerTest < ActionDispatch::IntegrationTest
     assert_select 'form'
   end
 
-  test 'aloows to create a new report' do
+  test 'allows to create a new report' do
     post reports_path, params: {
       report: {
         title: 'Informe Avanzado',
@@ -37,6 +37,7 @@ class ReportsControllerTest < ActionDispatch::IntegrationTest
     }
 
     assert_redirected_to reports_path
+    assert_equal flash[:notice],'Informe creado!'
   end
 
   test 'does not allow to create a new report with empty fields' do
@@ -50,5 +51,41 @@ class ReportsControllerTest < ActionDispatch::IntegrationTest
 
     assert_response :unprocessable_entity
   end
-end
 
+  test 'render an edit report form' do
+    get edit_report_path(reports(:traffic))
+
+    assert_response :success
+    assert_select 'form'
+  end
+
+  test 'allows to update a report' do
+    patch report_path(reports(:traffic)),params: {
+      report: {
+        sensor_id: 2
+      }
+    }
+    
+    assert_redirected_to reports_path
+    assert_equal flash[:notice], 'Informe actualizado!'
+  end
+
+  test 'does not allow to update a report with an invalid field' do
+    patch report_path(reports(:traffic)),params: {
+      report: {
+        sensor_id: nil
+      }
+    }
+    
+    assert_response :unprocessable_entity
+  end
+
+  test 'can delete report' do
+    assert_difference('Report.count', -1) do
+      delete report_path(reports(:traffic))
+    end
+
+    assert_redirected_to reports_path
+    assert_equal flash[:notice], 'Informe eliminado!'
+  end
+end
