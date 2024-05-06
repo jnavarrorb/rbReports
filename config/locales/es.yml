@@ -1,0 +1,50 @@
+es:
+  activerecord:
+    models:
+      report: Informe
+    attributes:
+      report:
+        title: 'Título'
+        description: 'Descripción'
+        template: 'Plantilla'
+        sensor_id: 'Sensor id'
+        sensor_name: 'Nombre del Sensor'
+        sensor_type: 'Tipo de Sensor'
+    errors:
+      models:
+        report:
+          attributes:
+            title:
+              blank: 'no puede estar vacío'
+            description:
+              blank: 'no puede estar vacía'
+            template:
+              blank: 'no puede estar vacía'
+            sensor_id:
+              blank: 'no puede estar vacío'
+            sensor_name:
+              blank: 'no puede estar vacío'
+            sensor_type: 
+              blank: 'no puede estar vacío'
+  common:
+    confirm: '¿Estás seguro?'
+  shared:
+    header:
+      add: 'Nuevo informe'
+  reports:
+    edit:
+      title: 'Editar informe'
+    new:
+      title: 'Nuevo informe'
+    index:
+      title: 'Informes:'
+    show:
+      edit: 'Editar informe'
+      delete: 'Borrar informe'
+    create:
+      action: 'Crear'
+      created: 'Tu informe se ha creado correctamente'
+    update:
+      updated: 'Tu informe se ha actualizado correctamente'
+    destroy:
+      destroyed: 'Tu informe se ha eliminado correctamente'

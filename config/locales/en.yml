@@ -20,4 +20,51 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    models:
+      report: Report
+    attributes:
+      report:
+        title: 'Title'
+        description: 'Description'
+        template: 'HTMLdoc'
+        sensor_id: 'Sensor id'
+        sensor_name: 'Sensor Name'
+        sensor_type: 'Sensor Type'
+    errors:
+      models:
+        report:
+          attributes:
+            title:
+              blank: "can't be blank"
+            description:
+              blank: "can't be blank"
+            template:
+              blank: "can't be blank"
+            sensor_id:
+              blank: "can't be blank"
+            sensor_name:
+              blank: "can't be blank"
+            sensor_type: 
+              blank: "can't be blank"
+  common:
+    confirm: 'Are you sure?'
+  shared:
+    header:
+      add: 'New report'
+  reports:
+    edit:
+      title: 'Edit report'
+    new:
+      title: 'New report'
+    index:
+      title: 'Reports:'
+    show:
+      edit: 'Edit report'
+      delete: 'Delete report'
+    create:
+      created: 'Your report has been successfully created'
+    update:
+      updated: 'Your report has been successfully updated'
+    destroy:
+      destroyed: 'Your report has been successfully destroyed'

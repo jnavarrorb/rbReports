@@ -15,7 +15,7 @@ class ReportsController < ApplicationController
       @report = Report.new(report_params)
 
       if @report.save
-        redirect_to reports_path, notice: 'Informe creado!'
+        redirect_to reports_path, notice: t('.created')
       else
         render :new, status: :unprocessable_entity
       end
@@ -29,7 +29,7 @@ class ReportsController < ApplicationController
       @report = Report.find(params[:id])
 
       if @report.update(report_params)
-        redirect_to reports_path, notice: 'Informe actualizado!'
+        redirect_to reports_path, notice: t('.updated')
       else
         render :edit, status: :unprocessable_entity
       end
@@ -39,7 +39,7 @@ class ReportsController < ApplicationController
       @report = Report.find(params[:id])
       @report.destroy
 
-      redirect_to reports_path, notice: 'Informe eliminado!', status: :see_other
+      redirect_to reports_path, notice: t('.destroyed'), status: :see_other
     end
     
     private
