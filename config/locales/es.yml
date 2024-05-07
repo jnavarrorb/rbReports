@@ -31,7 +31,7 @@ es:
       create: 'Crear %{model}'
       update: 'Actualizar %{model}'
   common:
-    confirm: '¿Estás seguro?'
+    confirm: '¿Estás seguro/a?'
   shared:
     header:
       add: 'Nuevo informe'
