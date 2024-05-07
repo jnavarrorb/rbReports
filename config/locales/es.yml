@@ -26,6 +26,10 @@ es:
               blank: 'no puede estar vacío'
             sensor_type: 
               blank: 'no puede estar vacío'
+  helpers:
+    submit:
+      create: 'Crear %{model}'
+      update: 'Actualizar %{model}'
   common:
     confirm: '¿Estás seguro?'
   shared:
@@ -36,13 +40,13 @@ es:
       title: 'Editar informe'
     new:
       title: 'Nuevo informe'
+      action: 'Crear'
     index:
       title: 'Informes:'
     show:
       edit: 'Editar informe'
       delete: 'Borrar informe'
     create:
-      action: 'Crear'
       created: 'Tu informe se ha creado correctamente'
     update:
       updated: 'Tu informe se ha actualizado correctamente'
