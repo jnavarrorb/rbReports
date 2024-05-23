@@ -51,20 +51,20 @@ en:
     confirm: 'Are you sure?'
   shared:
     header:
-      add: 'New report'
+      add: 'New template report'
   reports:
     edit:
-      title: 'Edit report'
+      title: 'Edit template report'
     new:
-      title: 'New report'
+      title: 'New report`s template'
     index:
-      title: 'Reports:'
+      title: 'Report`s templates:'
     show:
-      edit: 'Edit report'
-      delete: 'Delete report'
+      edit: 'Edit template report'
+      delete: 'Delete template report (with its historical)'
     create:
-      created: 'Your report has been successfully created'
+      created: 'Your report`s template has been successfully created'
     update:
-      updated: 'Your report has been successfully updated'
+      updated: 'Your report`s template has been successfully updated'
     destroy:
-      destroyed: 'Your report has been successfully destroyed'
+      destroyed: 'Your report`s template has been successfully destroyed'

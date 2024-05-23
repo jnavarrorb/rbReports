@@ -1,12 +1,43 @@
-<h1><%= t('.title') %></h1>
+<div class="panel">
+  <div class="panel-heading">
+    <h1 class="panel-title"><%= t('.title') %></h1>
+  </div>
 
-<% @reports.each do |report| %>
-    <%= link_to report_path(report), class: 'report' do%>
-    <h2><%=report.title%></h2>
+  <div class="panel-body">
+  <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Last Modified</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+            <% @reports.each do |report| %>
+              <tr>
+                <td> 
+                  <%= link_to report_path(report), class: 'report' do%>
+                    <p><%=report.title%></p>
+                  <% end %>
+                </td>
+                <td>
+                  <p><%=report.description%></p>
+                </td>
+                <td>
+                <!--lastmodifed-->
+                </td>
+                <td class="last row-right">
+                   <%= link_to content_tag(:i, nil, class: 'icon-fixed-width icon-pencil'), edit_report_path(report), class: 'btn' %>
+                   <%= link_to content_tag(:i, nil, class: 'icon-fixed-width icon-trash'), report_path(report), method: :delete, data: { confirm: t('common.confirm') }, class: 'btn' %>
+              </tr>
+             <% end %>
+            </tbody>
+          </table>
+   
+  </div>
 
-    <p><%=report.description%></p>
+</div>
 
-  <% end %>
-<% end %>
 
-<%= Date.today %>
+

@@ -34,21 +34,21 @@ es:
     confirm: '¿Estás seguro/a?'
   shared:
     header:
-      add: 'Nuevo informe'
+      add: 'Nueva plantilla de informe'
   reports:
     edit:
-      title: 'Editar informe'
+      title: 'Editar plantilla de informe'
     new:
-      title: 'Nuevo informe'
+      title: 'Nueva plantilla de informe'
       action: 'Crear'
     index:
-      title: 'Informes:'
+      title: 'Plantillas de Informes:'
     show:
-      edit: 'Editar informe'
-      delete: 'Borrar informe'
+      edit: 'Editar Plantilla de informe'
+      delete: 'Borrar Plantilla de informe e histórico'
     create:
-      created: 'Tu informe se ha creado correctamente'
+      created: 'Tu  plantilla de informe se ha creado correctamente'
     update:
-      updated: 'Tu informe se ha actualizado correctamente'
+      updated: 'Tu plantilla de informe se ha actualizado correctamente'
     destroy:
-      destroyed: 'Tu informe se ha eliminado correctamente'
+      destroyed: 'Tu plantilla informe se ha eliminado correctamente'
