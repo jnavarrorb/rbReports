@@ -269,3 +269,7 @@ table td.last .btn, table th.last .btn {
  #errors {
     color: red;
  }
+
+ .template {
+  color:purple;
+ }

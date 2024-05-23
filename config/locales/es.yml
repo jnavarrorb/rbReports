@@ -44,6 +44,7 @@ es:
     index:
       title: 'Plantillas de Informes:'
     show:
+      pdf: 'Generar PDF'
       edit: 'Editar Plantilla de informe'
       delete: 'Borrar Plantilla de informe e histórico'
     create:

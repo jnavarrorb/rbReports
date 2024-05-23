@@ -35,6 +35,9 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'wicked_pdf', '=1.4.0'
+#gem 'wkhtmltopdf-binary','=0.12.6.1'
+
 # Use Amazon Web Services s3 for storage
 gem 'aws-sdk', '=1.61.0'
 gem 'aws-s3', '=0.6.3'

@@ -5,6 +5,11 @@ class ReportsController < ApplicationController
 
     def show
       @report = Report.find(params[:id])
+      respond_to do |format|
+        format.html
+        format.json
+        format.pdf { render template: 'reports/report', pdf: 'Report', layout: 'pdf.html'}
+      end
     end
 
     def new

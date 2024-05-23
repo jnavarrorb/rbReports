@@ -60,6 +60,7 @@ en:
     index:
       title: 'Report`s templates:'
     show:
+      pdf: 'Generate PDF'
       edit: 'Edit template report'
       delete: 'Delete template report (with its historical)'
     create:
