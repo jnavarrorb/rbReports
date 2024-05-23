@@ -25,7 +25,7 @@
                   <p><%=report.description%></p>
                 </td>
                 <td>
-                <!--lastmodifed-->
+                <p><%=format_time report.updated_at, {undefinedString: "Never"}%></p>
                 </td>
                 <td class="last row-right">
                    <%= link_to content_tag(:i, nil, class: 'icon-fixed-width icon-pencil'), edit_report_path(report), class: 'btn' %>
