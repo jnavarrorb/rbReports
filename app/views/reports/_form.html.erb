@@ -1,32 +1,63 @@
 <%= form_for @report do |form| %>
-    <% @report.errors.full_messages.each do |error| %>
-     <div id='errors'>
-       <%= error %>
-     </div>
-   <% end %>
+  <% @report.errors.full_messages.each do |error| %>
+  <div id='errors'>
+    <%= error %>
+  </div>
+  <% end %>
 
-    <div>
+  <div class="row">
+    <div class="col-25">
       <%= form.label :title %>
+    </div>
+    <div class="col-25">
       <%= form.text_field :title %>
     </div>
+  </div>
   
-    <div>
+  <div class="row">
+    <div class="col-25">
       <%= form.label :description %>
+    </div>
+    <div class="col-75">
       <%= form.text_area :description %>
     </div>
+  </div>
   
-    <div>
+  <div class="row">
+    <div class="col-25">
       <%= form.label :template%>
+    </div>
+    <div class="col-75">
       <%= form.text_area :template %>
     </div>
+  </div>
   
-    <div>
+  <div class="row">
+    <div class="col-25">
       <%= form.label :sensor_type %>
-      <%= form.text_field :sensor_type %>
-      <%= form.label :sensor_id %>
-      <%= form.number_field :sensor_id %>
+    </div>
+    <div class="col-25">
       <%= form.label :sensor_name %>
+    </div>
+    <div class="col-25">
+      <%= form.label :sensor_id %>
+    </div>
+  </div>
+  <div>
+    <div class="col-25">
+      <%= form.text_field :sensor_type %>
+    </div>
+    <div class="col-25">
+      <%= form.number_field :sensor_id %>
+    </div>
+    <div class="col-25">
       <%= form.text_field :sensor_name %>
-  
-    <%= form.submit %>
+    </div>      
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <%= form.submit %>
+    </div>  
+  </div>
   <% end %>

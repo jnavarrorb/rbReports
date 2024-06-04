@@ -7,7 +7,7 @@
      <p><small> <%= @report.sensor_id%> <%= @report.sensor_name%> de tipo:"<%= @report.sensor_type%> " </small></p> 
 </div>
 
-<%= link_to t('.pdf'), report_path(@report) + '.pdf' %> |
+<%= link_to t('.pdf'), report_path(@report) + '.pdf', :target =>'_blank' %> |
 <%= link_to t('.edit'), edit_report_path(@report) %> |
 <%= link_to t('.delete'), report_path(@report), method: :delete, data: { confirm: t('common.confirm') } %>
 
